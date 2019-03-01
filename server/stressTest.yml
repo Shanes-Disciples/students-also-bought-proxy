@@ -1,0 +1,16 @@
+config:
+  target: 'http://localhost:3000'
+  processor: "./generateRandomCourseID.js"
+  phases: 
+    # - duration: 60
+    #   arrivalRate: 10
+    #   rampTo: 300
+    #   name: "warm up the application"
+    - duration: 30
+      arrivalRate: 500
+      name: "sustained max load"
+scenarios:
+  - flow:
+    - function: "getRandomIntInclusive"
+    - get:
+        url: "/courses/{{courseID}}/"

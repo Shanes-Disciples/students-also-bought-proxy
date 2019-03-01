@@ -20,6 +20,8 @@
     "sequel": "^0.3.10"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+    "artillery": "^1.6.0-25",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "newrelic": "^4.11.0"
   }
 }
